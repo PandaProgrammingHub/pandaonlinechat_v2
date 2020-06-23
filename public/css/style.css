@@ -1,0 +1,88 @@
+nav {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+nav a {
+  color: #333 !important;
+}
+.leftnav-contain {
+  position: fixed;
+  height: calc(100% + 60px);
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: 18%;
+  overflow: auto;
+}
+.leftnav-contain li {
+  float: none;
+  line-height: 48px;
+}
+.leftnav-contain .user-view {
+  position: relative;
+  padding: 32px 32px 0;
+  margin-bottom: 8px;
+}
+.leftnav-contain .user-view .background {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.leftnav-contain .user-view > a {
+  height: auto;
+  padding: 0;
+}
+ul:not(.browser-default) > li {
+  list-style-type: none;
+}
+p {
+  margin: 10px 0 !important;
+}
+
+p.login-btn a:hover {
+  background: #000000 !important;
+  color: #ffffff;
+}
+.login-body {
+  background: url("/image/Panda_Online_Chat_background_image.jpeg") no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.login-container {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  color: azure;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.fa-small {
+  font-size: 16px !important;
+}
+
+.btn-float {
+  float: left;
+  margin-right: 10px;
+}
+
+.img-small {
+  width: 180px;
+}
+
+.section p a {
+  min-width: 250px;
+}

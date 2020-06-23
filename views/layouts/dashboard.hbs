@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>panda chat api</title>
+    <link rel="icon" href="/image/favicon.png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="https://bootswatch.com/3/flatly/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel='stylesheet' href='/css/dashboardstyle.css' type='text/css' />
+    <link href="/css/emoticons.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"
+        integrity="sha256-OgiHfllOBEOiWQ2OcBsDncRG2k7QBW9Rs1dB7MH2N2s=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/JS/chat.js"></script>
+    <script type="text/javascript" src="/JS/emoticons.js"></script>
+    <!-- <script src="bootstrap.min.js"></script> -->
+</head>
+
+<body>
+    <!-- Calling Header Section -->
+    {{> _header}}
+    <!-- Calling Body Section -->
+    {{{body}}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script>
+        $('.nav li').click(function () {
+            $('.nav li').removeClass('active');
+            $(this).addClass('active');
+        })
+        $(function () {
+            var current = location.pathname;
+            $('.nav li a').each(function () {
+                var $this = $(this);
+                if ($this.attr('href').indexOf(current) !== -1) {
+                    $this.parent().addClass('active');
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>

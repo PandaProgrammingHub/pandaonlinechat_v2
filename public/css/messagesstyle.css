@@ -1,0 +1,204 @@
+/*--------Dashboard Css---------------*/
+body {
+  background: #f0f3f6;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.conversation-wrap {
+  box-shadow: -2px 0 3px #ddd;
+  padding: 0;
+  max-height: 400px;
+  overflow: auto;
+  margin-left: 10px;
+  min-height: 400px;
+  /* background: rgba(19, 35, 47, 0.9); */
+  font-family: "Titillium Web", sans-serif;
+  background: #fff;
+}
+.media.conversation:hover {
+  border-left: 2px solid #50d0c1;
+  color: #555555;
+  text-decoration: none;
+  background-color: #f0f3f6;
+}
+.conversation-wrap .media-heading {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+  padding-right: 75px;
+  position: absolute;
+}
+.conversation {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  cursor: pointer;
+}
+.conversationHead {
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+  border-bottom: solid 1px #333333;
+  text-transform: capitalize;
+}
+.chat_with_user_name {
+  margin: 10px;
+}
+.message_send_by_me {
+  background: #b7dcfe;
+  color: #317787;
+  border-radius: 0;
+  padding: 12px 20px;
+}
+.message_send_by_other {
+  background: #ffda87;
+  color: #a07617;
+  border-radius: 0;
+  padding: 12px 20px;
+}
+.media.conversation.active {
+  background-color: aqua;
+}
+.media.conversation.newmessage {
+  background-color: rgb(149, 247, 151);
+}
+.displaynone {
+  display: none;
+}
+
+.message-wrap {
+  box-shadow: 0 0 3px #ddd;
+  padding: 0;
+  background-color: #fff;
+}
+.msg {
+  padding: 5px;
+  /*border-bottom:1px solid #ddd;*/
+  margin: 0;
+}
+.msg-wrap {
+  padding: 10px;
+  min-height: 327px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.time {
+  color: #888282;
+}
+
+.send-wrap {
+  padding: 0px 10px;
+}
+
+.send-message {
+  resize: none;
+}
+
+.highlight {
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+.send-message-btn {
+  height: 87px;
+  margin-left: -15px;
+}
+.btn-panel {
+  background: #f7f7f9;
+}
+
+.btn-panel .btn {
+  color: #b8b8b8;
+
+  transition: 0.2s all ease-in-out;
+}
+
+.btn-panel .btn:hover {
+  color: #666;
+  background: #f8f8f8;
+}
+.btn-panel .btn:active {
+  background: #f8f8f8;
+  box-shadow: 0 0 1px #ddd;
+}
+
+.btn-panel-conversation .btn,
+.btn-panel-msg .btn {
+  background: #f8f8f8;
+}
+.btn-panel-conversation .btn:first-child {
+  border-right: 1px solid #ddd;
+}
+
+.msg-wrap .media-heading {
+  font-size: 1.2em;
+  color: #317787;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-weight: 300;
+}
+.msg-wrap .message_send_by_other .media-heading {
+  color: #a07617;
+}
+
+.msg-date {
+  background: none;
+  text-align: center;
+  color: #aaa;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #ddd;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  /*        -webkit-border-radius: 10px;
+         border-radius: 10px;*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /*        -webkit-border-radius: 10px;
+         border-radius: 10px;*/
+  background: #ddd;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #ddd;
+}
+
+strong.username {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.online {
+  border-radius: 50%;
+  height: 10px;
+  margin-left: 200px;
+  width: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  background: rgb(66, 183, 42);
+}
+.offline {
+  border-radius: 50%;
+  height: 10px;
+  margin-left: 200px;
+  width: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  background: rgb(230, 223, 219);
+}

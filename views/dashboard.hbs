@@ -1,0 +1,92 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="profile-sidebar">
+                <!-- SIDEBAR USERPIC -->
+                <div class="profile-userpic">
+                    <img src={{image}} class="img-responsive" alt="">
+                </div>
+                <!-- END SIDEBAR USERPIC -->
+                <!-- SIDEBAR USER TITLE -->
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">{{name}}
+                    </div>
+                </div>
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-home"></i>
+                                Overview </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i>
+                                Account Settings </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="glyphicon glyphicon-ok"></i>
+                                Tasks </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-flag"></i>
+                                Help </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END MENU -->
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="profile-content">
+                <div id="updateBoxBlock" data-step="1" data-intro="You can upload status.">
+                    <div class="panel panel-default share borderRound" id="updateGrid">
+                        <form action="" method="post" id="wallStatusPost">
+
+                            <div class="panel-heading panel-heading-gray title borderRoundTop">
+                                <span class="boxName">What's on your mind,</span>
+                                <span class="sessionName">{{firstName}}</span>?
+                            </div>
+                            <div class="panel-body ">
+                                <textarea name="status" class="form-control share-text placeUpdate" id="statusText"
+                                    rows="1" placeholder="Write your status..."></textarea>
+                            </div>
+                            <div class="panel-footer share-buttons borderRoundBottom">
+                                <a href="javascript:void(0);" class="updateControl" id="photo"
+                                    original-title="Upload Image"><span class="commonPhotos">Photos</span></a>
+
+                                <a href="javascript:void(0);" class="updateControl" id="webcamButton"
+                                    title="Webcam Snap"><span class="boxWebcam">Webcam</span></a>
+
+                                <a href="javascript:void(0);" class="updateControl" id="geo" title="Geo Location"><span
+                                        class="boxLocation">Location</span></a>
+
+                                <span class="pull-right">
+                                    <button class="btn btn-success text-right  send-message-btn pull-right">
+                                        POST
+                                        <span><i class="fa fa-upload left fa-1x"></i></span></button>
+                                    <!-- <span id="updateButton" class="update_button wallbutton update_box"><i class="fa fa-location-arrow"></i> <button class="btn  buttonUpdate">Update</button></span> -->
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-offset-3">
+                    <div id="dashboardLoader" style="display: none;"><img src="/image/loadBars.gif"> Loading...</div>
+                </div>
+                <div class="wall-post-wrap" id="updateBoxBlock">
+                    {{!-- <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel primary</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
