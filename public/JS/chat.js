@@ -403,7 +403,7 @@ function getWallStatusPost() {
           <div class="panel-body">
             <div class="media msg">
               <a class="pull-left" href="#">
-                <img class="media-object img-circle"  data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src=${profilePic}}></a>
+                <img class="media-object img-circle"  data-src="holder.js/64x64" alt="64x64" style="width: 32px; height: 32px;" src=${profilePic}></a>
                   <div class="media-body"><small class="col-lg-10">
                     ${$.emoticons.replace(post.pastDescription)} 
                     </small>
